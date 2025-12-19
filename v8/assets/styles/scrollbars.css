@@ -1,0 +1,24 @@
+/* Minimal themed scrollbars */
+.content, .thread, .sheet, .list, .story-rail{
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--accent) 60%, rgba(255,255,255,0.12)) transparent;
+}
+.content::-webkit-scrollbar,
+.thread::-webkit-scrollbar,
+.sheet::-webkit-scrollbar,
+.story-rail::-webkit-scrollbar{
+  width:8px; height:8px;
+}
+.content::-webkit-scrollbar-track,
+.thread::-webkit-scrollbar-track,
+.sheet::-webkit-scrollbar-track,
+.story-rail::-webkit-scrollbar-track{
+  background:transparent;
+}
+.content::-webkit-scrollbar-thumb,
+.thread::-webkit-scrollbar-thumb,
+.sheet::-webkit-scrollbar-thumb,
+.story-rail::-webkit-scrollbar-thumb{
+  background: color-mix(in srgb, var(--accent) 60%, rgba(255,255,255,0.12));
+  border-radius:999px;
+}
