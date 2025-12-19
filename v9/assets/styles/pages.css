@@ -1,0 +1,53 @@
+.hero{
+  padding:12px;
+  border-radius:18px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.12);
+  box-shadow:0 12px 26px rgba(0,0,0,0.25);
+}
+.waterline{height:1px;background:rgba(255,255,255,0.10);margin-top:10px;}
+.match{
+  display:flex;gap:12px;align-items:flex-start;
+}
+.avatar{
+  width:44px;height:44px;border-radius:16px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.05));
+  border:1px solid rgba(255,255,255,0.12);
+  display:grid;place-items:center;
+  flex:0 0 auto; overflow:hidden;
+}
+.avatar svg{opacity:.95;}
+.name{font-weight:700;font-size:14px;margin:0;}
+.meta{margin:2px 0 0;font-size:12px;color:var(--muted);line-height:1.35;}
+.actions{display:flex;gap:8px;margin-top:10px;}
+.iconbtn{
+  flex:1 1 auto;
+  border-radius:14px;
+  padding:10px 10px;
+  border:1px solid rgba(255,255,255,0.14);
+  background:rgba(255,255,255,0.05);
+  color:var(--text);
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-weight:650;
+  font-size:13px;
+}
+.iconbtn.like{border-color:rgba(249,115,22,0.55);background:rgba(249,115,22,0.14);}
+.iconbtn.chat{border-color:rgba(15,118,110,0.55);background:rgba(15,118,110,0.14);}
+.iconbtn.ghost{border-color:rgba(255,255,255,0.12);background:rgba(255,255,255,0.03);color:var(--muted);}
+.iconbtn:active{transform:scale(0.99);}
+.listrow{display:flex;flex-direction:column;gap:6px;}
+.nav-hidden .nav{display:none;}
+.nav-hidden .content{padding-bottom:20px;}
+.splash{
+  position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center;
+  background:radial-gradient(1600px 900px at 50% 0%, rgba(197,167,106,0.18), transparent 55%), linear-gradient(160deg, var(--bg0), var(--bg1));
+  z-index:5;
+}
+.splash h1{margin:12px 0 6px; text-align:center;}
+.splash p{margin:0; color:var(--muted); text-align:center;}
+.auth-box{display:flex;flex-direction:column;gap:12px;padding:12px;}
+.settings-list .rowitem{align-items:flex-start;}

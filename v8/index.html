@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>SIFU Love — Feng Shui UI Prototype (v8)</title>
+  <!-- Testing checklist (manual) -->
+  <!--
+    - Open app: splash appears first time; Tap Enter -> Home; reload after toggle skip works.
+    - Navigate all tabs/routes (Home, Match, Chat, Profile, Settings, Login/Register): only one scroll, no bleed.
+    - Swipe cards + undo; like/pass toasts.
+    - Chat: send message -> typing indicator -> auto reply (unless disabled in Settings). Long-press/ctx menus show sheet.
+    - Admin user filters react to search/status/verified/VIP.
+    - Language switch zh-HK/en updates text immediately and persists.
+    - Register new user -> Profile shows new data; Logout returns to Splash/Login.
+    - Hash routes survive refresh and Back works.
+  -->
+  <link rel="stylesheet" href="./assets/styles/base.css">
+  <link rel="stylesheet" href="./assets/styles/components.css">
+  <link rel="stylesheet" href="./assets/styles/pages.css">
+  <link rel="stylesheet" href="./assets/styles/scrollbars.css">
+</head>
+<body>
+  <div id="root"></div>
+
+  <div id="toast" class="toast"></div>
+  <div id="sheet" class="sheet" aria-hidden="true"></div>
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
